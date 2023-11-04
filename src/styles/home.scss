@@ -1,0 +1,23 @@
+.home{
+  overflow: hidden;
+    &_list{
+      display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;  
+    }
+    display: flex;
+}
+
+@media screen and (max-width: 1100px){
+  .home{
+    &_list{grid-template-columns: 1fr;}
+  }
+}
+
+@media screen and (max-width: 800px){
+  .home{
+    flex-direction: column;
+    &_list{grid-template-columns: 1fr;}
+  }
+
+}

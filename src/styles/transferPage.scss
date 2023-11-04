@@ -1,0 +1,95 @@
+.transferPage{
+    position: relative;
+    min-height: calc(100vh - 160px);
+    width: 80%;
+    .title{
+        margin: 50px;
+        margin-bottom: 40px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h5{
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        .block{
+            margin-bottom: 50px;
+            padding: 20px 40px;
+            border-radius: 3px;
+            h6{
+                font-size: 1em;
+                font-weight: 400;
+            } 
+            input, select, option{
+                color: inherit;
+                font-size: 1.1em;
+                width: 90%;
+                min-width: 200px;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid ;
+                background-color: inherit;
+            }
+        }
+        img{
+            width: 60px;
+            height: 30px;
+        }
+    }
+    .userInfo{
+        text-align: center;
+    }
+    .btn{
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+            display: block;
+            background-color: rgb(141, 198, 65);
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 7px 80px;
+        }
+    }
+}
+
+.light{
+    .transferPage{
+        .title{border-color: rgba(0, 0, 0, 0.2);}
+        .block{
+            background-color: #fff
+        }
+        .btn{
+            span{
+                color: #fff;
+            }
+        }
+    }
+}
+
+.dark{
+    .transferPage{
+        .title{border-color: rgba(255, 255, 255, 0.2);}
+        .block{
+            background-color: #303030
+        }
+        .btn{
+            span{
+                color: #303030;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .transferPage{
+    .title{
+            width: 100%;
+            margin: 50px 5px;
+        }}
+}

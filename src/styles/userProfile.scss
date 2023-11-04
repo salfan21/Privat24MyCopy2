@@ -1,0 +1,172 @@
+.userProfile{
+    position: relative;
+    padding: 100px 200px;
+    padding-bottom: 50px;
+    font-size: 1.2em;
+    overflow: hidden;
+    h2{
+        margin-bottom: 20px;
+    }
+    .user{
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+        h2{
+            text-align: center;
+        }
+    }
+    .cards{
+        width: 450px;
+    }
+    .card{
+        position: relative;
+        margin: 0 auto;
+        min-width: 450px;
+        border-radius: 15px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 20px;
+        animation: cardSlide 0.5s linear;
+        p{
+            margin: 2.5px;
+        }
+        div:last-child{display: flex; justify-content: space-between; padding: 0 20px;}
+        .logo{
+            width: 50px;
+            height: 30px;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .leave{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 10px 5px;
+        text-align: right;
+        margin-top: 50px;
+        
+        span{
+            padding: 7px 80px;
+            border-radius: 3px;
+            cursor: pointer;
+            background-color: rgb(141, 198, 65);
+        }
+    }
+}
+
+.buttons{
+    display: flex;
+    margin: 20px 0;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    div:last-child{
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border-top: 2px solid;
+        border-left: 2px solid;
+        transform:rotate(-45deg)
+    }
+    div:first-child{
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border-top: 2px solid;
+        border-right: 2px solid;
+        transform:rotate(45deg)
+    }
+}
+
+.light{
+    .userProfile{
+        .card{
+            background-color: #f0cd03;
+        }
+        background-color: #fff;
+        span{
+            color: #fff;
+        }
+        .user{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        }
+    }
+    .buttons{
+
+        div{
+            border-color: rgba(0, 0, 0, 0.3);
+        }:hover{
+            border-color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+
+.dark{
+    .userProfile{
+        .card{
+            background-color: #d4ac1c;
+        }
+        background-color: #303030;
+        span{
+            color: #303030;
+        }
+        .user{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+    .buttons{
+        div{
+            border-color: rgba(255, 255, 255, 0.3);
+        }:hover{
+            border-color: rgba(255, 255, 255, 0.7)
+        }
+    }
+}
+
+@keyframes cardSlide{
+    from{
+        margin-left:400px; 
+    }
+    to{
+        margin-left: 0;
+    }
+}
+
+.never{
+    display: none;
+}
+
+@media screen and (max-width: 1100px){
+    .userProfile{
+        padding: 75px 100px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .userProfile{
+        padding: 35px 10px;
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .userProfile{
+        padding: 35px 10px;
+        padding-bottom: 25px;
+        .cards{
+            width: 300px;
+        }
+        .card{
+            margin: 0px auto;
+            min-width: 300px;
+            width: 300px;
+            height: 200px;
+            
+        } 
+    }
+}

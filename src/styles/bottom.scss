@@ -1,0 +1,148 @@
+.bottom{
+    position: relative;
+    height: 100px;
+    background-color: #FFF;
+    span{
+        opacity: 0.8;
+    }
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &_item{
+        height: 100%;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        min-width: 10%;
+        &_contact{
+            display: flex;
+            p{margin: 10px;font-size: 0.9em;}
+
+        }
+        &_switchers{            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            &_language{
+                display: flex;
+                align-items: center;
+                img{width: 1.5em; margin-right: 10px;}
+            }
+            &_theme{
+                margin-left: 15px;
+                padding: 5px 15px;
+                border: 1px solid;
+                border-radius: 10px;
+            }
+        }
+        &_license{opacity: 0.8; font-size: 0.8em;}
+    }
+}
+
+.light {
+    .bottom{
+        color: rgba(0, 0, 0, 0.87);
+        background-color: #FFF;
+        box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.05);
+    }
+}
+
+.dark{
+    .bottom{
+        color: rgba(255, 255, 255, 0.87);
+        background-color: #303030;  
+    }
+}
+
+.bottom{
+    .theme{
+        position: relative;
+        margin-left: 20px;
+        height: 10px;
+        width: 30px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        .switcher{
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            position: absolute;
+            left: -5px;
+        }
+    }
+}
+
+.bottom{
+    .light{
+        background-color: rgba(0, 0, 0, 0.08);
+        .switcher{
+            background-color: #FFF;
+            margin-left: 70%;
+            animation-duration: 1s;
+            animation-name: slideinLeft;
+            box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+        }
+    }
+}
+
+.bottom{
+    .dark{
+        background-color: rgba(255, 255, 255, 0.08);
+        .switcher{
+            background-color: #303030;
+            margin-right: 70%;
+            animation-duration: 1s;
+            animation-name: slideinRight;
+            box-shadow: 0px 0px 5px 2px rgba(255,255,255,0.2);
+        }
+    }
+}
+
+@keyframes slideinRight {
+    from {
+        margin-left: 70%;
+    }
+  
+    to {
+        margin-left: 0;
+    }
+  }
+
+@keyframes slideinLeft {
+    from {
+      margin-left: 0;
+    }
+  
+    to {
+      margin-left: 70%;
+    }
+  }
+
+@media screen and (max-width: 1100px){
+    .bottom{
+        height: 150px;
+        flex-direction: column-reverse;
+        padding: 30px 0;
+        &_item{
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    .bottom{
+        height: 200px;
+        flex-direction: column-reverse;
+        padding: 30px 0;
+        &_item{
+            align-items: center;
+            &_contact{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    } 
+}

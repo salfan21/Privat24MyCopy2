@@ -1,0 +1,32 @@
+.errorBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-size: 2em;
+        margin-bottom: 50px;
+    }
+    span{
+        padding: 10px 20px;
+        background-color: red;
+        border-radius: 3px;
+        cursor: pointer;
+        background-color: rgb(141, 198, 65);
+    }
+}
+
+.dark{
+    .errorBlock{
+        span{
+            color: #303030;
+        }
+    }
+}
+
+.light{
+    .errorBlock{
+        span{
+            color: #fff;
+        }
+    }
+}

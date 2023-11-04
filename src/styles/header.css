@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+  background-color: #c9c9c9;
+}
+.header_item {
+  font-size: 1.3em;
+  display: flex;
+  width: 25%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header_item_logo {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+.header_item_logo img {
+  height: 100%;
+  width: 100%;
+}
+.header_item p {
+  cursor: pointer;
+}
+.header_item p:hover {
+  border-bottom: 1px solid;
+}/*# sourceMappingURL=header.css.map */

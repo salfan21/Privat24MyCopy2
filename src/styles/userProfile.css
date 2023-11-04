@@ -1,0 +1,41 @@
+.userProfile {
+  font-size: 1.2em;
+}
+.userProfile h2 {
+  margin-bottom: 20px;
+}
+.userProfile .user {
+  margin-bottom: 20px;
+}
+.userProfile .card {
+  margin: 0 auto;
+  width: 85%;
+  border-radius: 15px;
+  background-color: #f0cd03;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 20px;
+}
+.userProfile .card p {
+  margin: 2.5px;
+}
+.userProfile .card div:last-child {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.userProfile .card .logo {
+  width: 50px;
+  height: 30px;
+}
+.userProfile .card .logo img {
+  height: 100%;
+  width: 100%;
+}
+.userProfile .leave {
+  margin: 10px 5px;
+  text-align: right;
+  cursor: pointer;
+}/*# sourceMappingURL=userProfile.css.map */

@@ -1,0 +1,97 @@
+.addCard{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: calc(100vh - 260px);
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    .item{
+       margin: 120px;
+       padding: 30px 50px;
+       border-radius: 3px;
+       h2{font-size: 1.4em; text-align: center;}
+       img{
+        display: block;
+        border-radius: 20px;
+        margin: 30px auto;
+        width: 300px;
+       }
+       div{
+        text-align: right;
+        span{
+            background-color: rgb(141, 198, 65);
+            padding: 7px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+       }
+       .container{
+            display: flex;
+            flex-direction: column;
+            label{
+                margin: 10px 0;
+                display: block;
+                width: 100%;
+                text-align: left;
+                input{
+                    color: inherit;
+                    font-size: 1.1em;
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    border-bottom: 1px solid ;
+                    background-color: inherit;
+                }
+            }
+        }
+    }
+}
+
+.light{
+    .addCard{
+        .item{
+            background-color: #fff;
+            color: #303030;
+            span{
+                color: #fff;
+            }
+        }
+    }
+}
+
+.dark{
+    .addCard{
+        .item{
+            background-color: #303030;
+            color: #fff;
+            span{
+                color: #303030;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .addCard{
+        flex-direction: column;
+        .item{
+            margin: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .addCard{
+        flex-direction: column;
+        .item{
+            margin: 30px 5px;
+            padding: 15px 25px;
+            img{
+                width: 200px;
+            }
+        }
+    }
+}

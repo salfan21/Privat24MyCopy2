@@ -1,0 +1,49 @@
+.singin{
+   border-radius: 3px;
+   font-size: 1.2em; 
+   max-width: 500px;
+   padding: 150px 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   h2{
+    margin-bottom: 50px;
+   }
+   input{
+      background-color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    background-color: inherit;
+    width: 70%;
+    margin-bottom: 40px;
+    height: 25px;
+    font-size: 20px;
+    color: inherit;
+   }
+   p{max-width: 70%;}
+   span{ cursor: pointer;}
+   button{
+    border-radius: 3px;
+    margin-top: 30px;
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+   }
+}
+
+.light{
+   .singin{
+      background-color: #fff;
+      span{color: rgb(141, 198, 65); cursor: pointer;}
+      button{background-color: rgb(141, 198, 65); color: #fff;}
+   }
+}
+
+.dark{
+   .singin{
+      background-color: #303030;
+      span{color: rgb(141, 198, 65); cursor: pointer;}
+      button{background-color: rgb(141, 198, 65); color: #303030;}
+   }
+}
